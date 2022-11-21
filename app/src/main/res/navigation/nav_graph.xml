@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.yoink.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.yoink.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ChallengesFragment"
+            app:destination="@id/ChallengesFragment" />
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/ChallengesFragment"
+        android:name="com.example.yoink.ChallengesFragment"
+        android:label="@string/challenges"
+        tools:layout="@layout/fragment_challenges">
+        <action
+            android:id="@+id/action_ChallengesFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_ChallengesFragment_to_BeginnerFragment"
+            app:destination="@id/BeginnerFragment" />
+        <action
+            android:id="@+id/action_ChallengesFragment_to_IntermediateFragment"
+            app:destination="@id/IntermediateFragment" />
+        <action
+            android:id="@+id/action_ChallengesFragment_to_AdvancedFragment"
+            app:destination="@id/AdvancedFragment" />
+        <action
+            android:id="@+id/action_ChallengesFragment_to_ProFragment"
+            app:destination="@id/ProFragment" />
+        <action
+            android:id="@+id/action_ChallengesFragment_to_ChefFragment"
+            app:destination="@id/ChefFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BeginnerFragment"
+        android:name="com.example.yoink.BeginnerFragment"
+        android:label="@string/beginner"
+        tools:layout="@layout/fragment_beginner">
+        <action
+            android:id="@+id/action_BeginnerFragment_to_ChallengesFragment"
+            app:destination="@id/ChallengesFragment" />
+        <action
+            android:id="@+id/action_BeginnerFragment_to_DummyTaskFragment"
+            app:destination="@id/DummyTaskFragment"
+            />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/IntermediateFragment"
+        android:name="com.example.yoink.IntermediateFragment"
+        android:label="@string/Intermediate"
+        tools:layout="@layout/fragment_intermediate">
+        <action
+            android:id="@+id/action_IntermediateFragment_to_ChallengesFragment"
+            app:destination="@id/ChallengesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AdvancedFragment"
+        android:name="com.example.yoink.AdvancedFragment"
+        android:label="@string/Advanced"
+        tools:layout="@layout/fragment_advanced">
+
+        <action
+            android:id="@+id/action_AdvancedFragment_to_ChallengesFragment"
+            app:destination="@id/ChallengesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProFragment"
+        android:name="com.example.yoink.ProFragment"
+        android:label="@string/Professional"
+        tools:layout="@layout/fragment_pro">
+
+        <action
+            android:id="@+id/action_ProFragment_to_ChallengesFragment"
+            app:destination="@id/ChallengesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ChefFragment"
+        android:name="com.example.yoink.ChefFragment"
+        android:label="@string/Chef"
+        tools:layout="@layout/fragment_chef">
+
+        <action
+            android:id="@+id/action_ChefFragment_to_ChallengesFragment"
+            app:destination="@id/ChallengesFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/DummyTaskFragment"
+        android:name="com.example.yoink.DummyTaskFragment"
+        android:label="@string/Dummy"
+        tools:layout="@layout/fragment_dummytask">
+
+        <action
+            android:id="@+id/action_DummyTaskFragment_to_BeginnersFragment"
+            app:destination="@id/BeginnerFragment" />
+    </fragment>
+
+</navigation>
