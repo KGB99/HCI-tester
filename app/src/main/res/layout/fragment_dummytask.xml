@@ -80,10 +80,21 @@
 
         </Button>
 
-
-
+        <Button
+            android:id="@+id/complete_challenge_button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/color1"
+            android:text="Complete Challenge"
+            app:cornerRadius="@dimen/sixty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/task_description" >
+        </Button>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </ScrollView>
 

@@ -14,8 +14,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.example.yoink.databinding.FragmentDummytaskBinding;
 
 
-
-public class DummyTaskFragment extends Fragment {
+public class Task_1_0_beta_onioncutting extends Fragment {
 
     private FragmentDummytaskBinding binding;
 
@@ -37,7 +36,7 @@ public class DummyTaskFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.back_button: NavHostFragment.findNavController(DummyTaskFragment.this)
+                    case R.id.back_button: NavHostFragment.findNavController(Task_1_0_beta_onioncutting.this)
                             .navigate(R.id.action_DummyTaskFragment_to_BeginnersFragment);
                 }}
         });
